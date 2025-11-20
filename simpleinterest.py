@@ -1,9 +1,9 @@
 import sys
 
 if len(sys.argv) == 4:
-    principal =sys.argv[1])
-    rate =sys.argv[2])
-    time =sys.argv[3])
+    principal =sys.argv[1]
+    rate =sys.argv[2]
+    time =sys.argv[3]
     print("user provided input values:")
 else:
     print("No input given - using default values:")
