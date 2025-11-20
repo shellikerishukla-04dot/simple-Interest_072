@@ -1,25 +1,19 @@
 import sys
 
 if len(sys.argv) == 4:
-    try:
-        principal = float(sys.argv[1])
-        rate = float(sys.argv[2])
-        time = float(sys.argv[3])
-        print("User provided input values:")
-    except ValueError:
-        print("Invalid input! Please enter numeric values.")
-        sys.exit(1)
+    principal = sys.argv[1]
+    rate = sys.argv[2]
+    time = sys.argv[3]
+    print("User Provided input values:")
 else:
     print("No input given - using default values:")
-    principal = 1000
-    rate = 5
-    time = 2
+    principal = "10000"
+    rate = "18"
+    time = "2"
 
-# Calculate simple interest
-simple_interest = (principal * rate * time) / 100
+simple_interest = (eval(principal) * eval(rate) * eval(time)) / 100
 
-# Display values
-print("Principal =", principal)
-print("Rate =", rate)
-print("Time =", time)
+print("Principal Amount:", principal)
+print("Rate of Interest:", rate)
+print("Time Period (years):", time)
 print("Simple Interest =", simple_interest)
