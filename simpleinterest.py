@@ -1,8 +1,5 @@
 import sys
-
-
-    # Check if the user provided all three inputs (principal, rate, time)
-    if len(sys.argv) == 4:
+if len(sys.argv) == 4:
         principal = float(sys.argv[1])
         rate = float(sys.argv[2])
         time = float(sys.argv[3])
